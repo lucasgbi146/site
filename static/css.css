@@ -1,0 +1,175 @@
+header{
+	border: 1px solid #bb2025;
+}
+#busca{
+	background-color: #dcdcdc;
+}
+#heEsq{
+	float: left;
+	padding-left: 22%;
+	padding-top: 0.8%;
+	height: 4%;
+}
+#imgPesq {
+    position: absolute;
+    width: 1%;
+    height: 1.7%;
+	margin-top: 0.2%;
+}
+#pesquisar {
+    background: transparent;
+    width: 100%;
+    padding: 0 0 0 12%;
+    border: none;
+    color: #555555;
+    border-radius: 3px;
+}
+#heDir{
+	float: right;
+	padding-right: 22%;
+	padding-top: 0.8%;
+	height: 4%;
+}
+.links{
+	color: #666666;
+}
+.links:hover{
+	text-decoration: none;
+	color: #bb2025;
+}
+#links2:hover{
+	text-decoration: none;
+	color: #bb2025;	
+}
+#parte2{
+	width: 100%;
+}
+#part1{
+	background-image: url("../imagens/Vagas.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+#pc{
+	width: 100%;
+	text-align: center;
+}
+#titulo{
+	color: #bb2025;
+	font-family: "albertus extra bold";
+}
+#subTit{
+	font-family: "albertus extra bold";
+}
+#umaPart{
+	width: 80%;
+}
+.b1{
+	border: 1px solid black;
+	background-color:#dcdcdc;
+}
+.b2{
+	border: 1px solid black;
+	background-color:#f7f7f7;
+	color: #bb2025;
+}
+#esp{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#bloco2{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#part3{
+	background-color:#1d1d1d;
+	color: white;
+}
+#part4{
+	background-color:#f7f7f7;
+	border-top: 1px #e6e6e6 solid;
+}
+#part5{
+	border-top: 1px #e6e6e6 solid;
+	background-color:#EFEFEF;
+}
+#empresa{
+	background-color:white;
+}
+#formular{
+	border-top: 1px #e6e6e6 solid;
+}
+#redes{
+	width: 20%;
+}
+#botLogin, #botCadastro {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#bb2025 0%,
+		#ffffff);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#bb2025),
+		to(#ffffff));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #000000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+#links2{
+	color: black;
+}
+.form12, .form123{
+	border-radius: 10px;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+.palavrinhas{
+	padding-left: 3%;
+	padding-right: 3%;
+	color: black;
+}
+tr, td{
+	padding: 2%;
+	border: 15px solid transparent;
+}
+#foo2{
+	background-color:#2a2a2a;
+	color: white;
+}
+#login, #cadastro{
+	background-image: url("../imagens/listra.jpg");
+}
+#teste{
+	width: 50%;
+	background-color:#f7f7f7;
+}
+.form123{
+	background-color:#f7f7f7;
+}
