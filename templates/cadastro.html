@@ -14,29 +14,29 @@
                             <div class="row">
                                 <div class="input-field col s12">
                                     {{form.usuario.label}}<br>
-                                    {{form.usuario}}
+                                    {{form.usuario(class="form-control")}}
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
                                     {{form.email.label}}<br>
-                                    {{form.email}}
+                                    {{form.email(class="form-control")}}
                                     
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
                                     {{form.senha.label}}<br>   
-                                    {{form.senha}}                
+                                    {{form.senha(class="form-control")}}                
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
                                     {{form.sobre.label}}<br>
-                                    {{form.sobre}}
+                                    {{form.sobre(class="form-control")}}
                                 </div>
-                            </div>
-                                {{form.submit(class="btn waves-effect waves-teal")}}
+                            </div><br>
+                                {{form.submit(class="btn btn-outline-danger")}}
                     </form >
                     <br>
 </div>

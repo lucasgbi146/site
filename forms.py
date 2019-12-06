@@ -15,9 +15,7 @@ class EntrarForm(FlaskForm):
     senha = PasswordField('Password', validators = [DataRequired()])
     submit = SubmitField('Cadastrar')
 
-class CadastrarForm(FlaskForm):
-    usuario = StringField('Usuário', validators = [DataRequired(), Length(min = 8, max = 80)])
-    email = StringField('Email', validators = [DataRequired(), Email()])
-    senha = PasswordField('Password', validators = [DataRequired()])
-    sobre = TextField('Sobre você', validators = [DataRequired()])
-    submit = SubmitField('Cadastrar')
+class ComentForm(FlaskForm):
+    email = StringField('Email', validators = [DataRequired(), Length(min = 8, max = 80)])
+    msg = TextField('Deixe seu comentário', validators = [DataRequired()])
+    submit = SubmitField('Enviar')

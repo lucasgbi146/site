@@ -5,7 +5,7 @@
 <div id="cadastro" style="margin-top: 2%; margin-bottom: 2%; margin-left: 35%;">
 		<div id="teste">
             <br/>
-			<h2 id="titulo" align="center"><strong>ENTARR</strong></h2>
+			<h2 id="titulo" align="center"><strong>ENTAR</strong></h2>
 			<div id="bloCad">
 				<img src="{{ url_for('static', filename='img/usuario.png') }}" id="pessoa" width="20%" style="margin-left: 40%;"/>
 				<div id="dFormLog" style=" padding: 5%;">
@@ -14,16 +14,16 @@
                             <div class="row">
                                 <div class="input-field col s12">
                                     {{form.usuario.label}}<br>
-                                    {{form.usuario}}
+                                    {{form.usuario(class="form-control")}}
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
                                     {{form.senha.label}}<br>   
-                                    {{form.senha}}                
+                                    {{form.senha(class="form-control")}}                
                                 </div>
-                            </div>
-                                {{form.submit(class="btn waves-effect waves-teal")}}
+                            </div><br>
+                                {{form.submit(class="btn btn-outline-danger")}}
                     </form >
                     <br>
 </div>

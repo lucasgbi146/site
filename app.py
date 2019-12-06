@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, request
 from flask_sqlalchemy import SQLAlchemy
-from forms import CadastrarForm, EntrarForm
+from forms import CadastrarForm, EntrarForm, ComentForm
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ED.db'
@@ -56,8 +56,9 @@ def ocupações():
 
 @app.route('/comentarios')
 def comentarios():
+    form = ComentForm()
 
-    return render_template('comentarios.html')
+    return render_template('comentarios.html', form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)

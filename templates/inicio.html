@@ -3,12 +3,12 @@
 
 {% block content %}
 <section>
-    <div id="part1">
+    <div id="part1" style="background-image: url('{{ url_for('static', filename='img/Vagas.jpg' ) }}');">
         <br/> <br/> <br/> <br/>
         <h2 align="center" id="subTit"> SEJA BEM-VINDO</h2>
-        <br/> <br/> <br/>
+        <br/><br/><br/>
             <div align="center">
-                <img src="imagens/barra.png" width="20%" alt="vagas para deficientes"/>
+                <img src="{{ url_for('static', filename='img/barra.png') }}" width="20%" alt="vagas para deficientes"/>
             </div>
         <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
     </div>
@@ -20,16 +20,16 @@
             <table align="center" id="umaPart">
                 <tr>
                     <td align="center" class="b1">
-                        <img src="imagens/visual.png" width="10%" alt="deficiencia visual"/>
+                        <img src="{{ url_for('static', filename='img/visual.png') }}" width="10%" alt="deficiencia visual"/>
                     </td>
                     <td align="center" class="b1">
-                        <img src="imagens/auditiva.png" width="10%" alt="deficiencia auditiva"/>
+                        <img src="{{ url_for('static', filename='img/auditiva.png') }}" width="10%" alt="deficiencia auditiva"/>
                     </td>		
                     <td align="center" class="b1">
-                        <img src="imagens/fisica.png" width="10%" alt="deficiencia física"/>
+                        <img src="{{ url_for('static', filename='img/fisica.png') }}" width="10%" alt="deficiencia física"/>
                     </td>			
                     <td align="center" class="b1">
-                        <img src="imagens/mente.png" width="10%" alt="deficiencia mental"/>
+                        <img src="{{ url_for('static', filename='img/mente.png') }}" width="10%" alt="deficiencia mental"/>
                     </td>
                 </tr>
                 <tr>
