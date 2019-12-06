@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}Cadastro{% endblock title %}
+
+{% block content %}
+<div id="cadastro" style="margin-top: 2%; margin-bottom: 2%; margin-left: 35%;">
+		<div id="teste">
+            <br/>
+			<h2 id="titulo" align="center"><strong>CADASTRAR</strong></h2>
+			<div id="bloCad">
+				<img src="{{ url_for('static', filename='img/cadastrar.png') }}" id="pessoa" width="20%" style="margin-left: 40%;"/>
+				<div id="dFormLog" style=" padding: 5%;">
+                    <form  method="POST" action="">
+                        {{form.hidden_tag ()}}
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    {{form.usuario.label}}<br>
+                                    {{form.usuario}}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    {{form.email.label}}<br>
+                                    {{form.email}}
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    {{form.senha.label}}<br>   
+                                    {{form.senha}}                
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    {{form.sobre.label}}<br>
+                                    {{form.sobre}}
+                                </div>
+                            </div>
+                                {{form.submit(class="btn waves-effect waves-teal")}}
+                    </form >
+                    <br>
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}

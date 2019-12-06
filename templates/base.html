@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../script/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <!--MENU-->
+<header>
+    <div id="heEsq">
+        <form id="busca">
+            <input type="image" src="{{ url_for('static', filename='img/lupa.png') }}" alt="pesquisar" id="imgPesq">
+            <input type="text" id="pesquisar" placeholder="Pesquisar..." value="">
+        </form>   
+    </div>
+    <div id="heDir">
+        <nav>
+            <a href="/login" class="links"><strong>Entrar</strong></a> ou
+            <a href="/cadastro" class="links"><strong>Cadastrar</strong></a>
+        </nav>
+    </div>
+    <br><br>
+    <div id="pc">
+        <div id="parte2" align="center">
+            <table>
+                <tr>
+                    <th id="dir">
+                        <hr/>
+                            <a href="/ocupações" class="links"> OCUPAÇÕES </a>
+                        <hr/>
+                    </th>
+                    <td>
+                        <div align="center">
+                            <a href="/"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" width="35%" id=""></a>
+                        </div>
+                    </td>
+                    <th id="esq">
+                        <hr/>
+                            <a href="/comentarios" class="links"> COMENTÁRIOS </a>
+                        <hr/>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br/>
+</header>
+    <!--CONTEÚDO-->
+    {% block content %}
+
+    {% endblock content %}
+<!--RODAPÉ-->
+<footer>
+    <div id="part4">
+        <br/>
+        <h2 id="titulo" align="center"><strong>CONECTE CONOSCO:</strong></h2>
+        <br/>
+        <table align="center" id="redes">
+            <tr>
+                <td align="center">
+                    <a href=""> <img src="{{ url_for('static', filename='img/facebook.png') }}" width="40%" alt="facebook"/> </a>
+                </td>
+                <td align="center">
+                    <a href=""> <img src="{{ url_for('static', filename='img/instagram.png') }}" width="40%" alt="instagram"/> </a>
+                </td>
+                <td align="center">
+                    <a href=""> <img src="{{ url_for('static', filename='img/twitter.png') }}" width="40%" alt="twitter"/> </a>
+                </td>
+            </tr>
+        </table>
+        <!--As contas de facebook, instagram e twitter não foram criadas ainda, portanto os links não levam à esses lugares.-->	
+    </div>
+    <div id="foo2">
+        <br/>
+        <h6 align="center">© Copyright 2019 - All Rights Reserved</h6>
+        <br/>
+    </div>
+</footer>
+</body>
+</html>
